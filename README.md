@@ -26,3 +26,13 @@ pytest tests/ -v
 This repository is provided for educational use only. See [LICENSE](LICENSE) for terms.
 
 You may clone and modify this repository for personal learning and practice, and reference code you wrote here in your professional portfolio. Redistribution outside this course is not permitted.
+
+pers-dois` | List papers and their DOIs (including optional) | SELECT |
+| `check-prolific` | Verify if any author has > 10 papers | ASK |
+| `construct-2023` | Build a subgraph for 2023 publications | CONSTRUCT |
+| `top-5-cited` | Retrieve the top 5 most-cited papers | SELECT |
+| `hinton-matches` | Match "Hinton" via prefLabel and altLabel | SELECT |
+
+## How to run
+1. Ensure Fuseki is running: `docker-compose up -d`
+2. Execute the CLI tool: `python query.py <intent>`
